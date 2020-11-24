@@ -47,7 +47,7 @@ INSERT INTO tb_movie_genre (movie_id, genre_id) VALUES (10, 2);
 
 
 INSERT INTO tb_review (movie_id, user_id, text) VALUES (1, 1, 'role visitor não podera adionar review on movie');
-INSERT INTO tb_review (movie_id, user_id, text) VALUES (2, 2, 'Good movie');
+INSERT INTO tb_review (movie_id, user_id, text) VALUES (2, 2, '');
 INSERT INTO tb_review (movie_id, user_id, text) VALUES (3, 2, 'Good movie');
 INSERT INTO tb_review (movie_id, user_id, text) VALUES (4, 2, 'Good movie');
 INSERT INTO tb_review (movie_id, user_id, text) VALUES (5, 2, 'Good movie');
