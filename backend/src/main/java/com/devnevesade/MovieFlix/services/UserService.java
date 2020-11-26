@@ -81,7 +81,7 @@ public class UserService implements UserDetailsService{
 		try {
 			User entity = repository.getOne(id);
 			copyDtoToEntity(dto, entity);
-			//entity.setName(dto.getName());
+			
 			entity = repository.save(entity);
 			return new UserDTO(entity);
 		
