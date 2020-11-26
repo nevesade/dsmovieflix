@@ -22,7 +22,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.devnevesade.MovieFlix.dto.UserDTO;
 import com.devnevesade.MovieFlix.dto.UserInsertDTO;
-
+import com.devnevesade.MovieFlix.dto.UserUpdateDTO;
 import com.devnevesade.MovieFlix.services.UserService;
 
 @RestController
@@ -68,7 +68,7 @@ public class UserResource {
 	
 	
 	@PutMapping(value = "/{id}")
-	public ResponseEntity<UserDTO> update(@PathVariable Long id,@Valid @RequestBody UserDTO dto){
+	public ResponseEntity<UserDTO> update(@PathVariable Long id,@Valid @RequestBody UserUpdateDTO dto){
 		UserDTO newDto = service.updtate(id, dto);
 		return ResponseEntity.ok().body(newDto);
 	}

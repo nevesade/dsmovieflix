@@ -1,8 +1,8 @@
 package com.devnevesade.MovieFlix.dto;
 
+import com.devade.dscatalog.services.validation.UserInsertValid;
 
-
-
+@UserInsertValid
 public class UserInsertDTO  extends UserDTO{
 
 	private static final long serialVersionUID = 1L;
