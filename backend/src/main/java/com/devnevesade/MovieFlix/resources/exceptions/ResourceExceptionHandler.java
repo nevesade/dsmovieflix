@@ -11,7 +11,6 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-
 import com.devnevesade.MovieFlix.services.exceptions.DatabaseException;
 import com.devnevesade.MovieFlix.services.exceptions.ResourceNotFoundException;
 
