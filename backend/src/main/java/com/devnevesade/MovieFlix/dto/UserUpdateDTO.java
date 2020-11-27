@@ -1,6 +1,6 @@
 package com.devnevesade.MovieFlix.dto;
 
-import com.devade.dscatalog.services.validation.UserUpdateValid;
+import com.devnevesade.MovieFlix.services.validation.UserUpdateValid;
 
 
 

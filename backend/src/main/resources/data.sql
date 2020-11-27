@@ -1,5 +1,5 @@
-INSERT INTO tb_user (name, email, password) VALUES ('Alex Brown', 'bob@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
-INSERT INTO tb_user (name, email, password) VALUES ('Bob Brown', 'ana@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
+INSERT INTO tb_user (name, email, password) VALUES ('Bob Brown', 'bob@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
+INSERT INTO tb_user (name, email, password) VALUES ('Ana Lopes', 'ana@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
 
 
 
@@ -33,6 +33,7 @@ INSERT INTO tb_movie (title, sub_Title, year, img_Url, synopsis) VALUES ( ' Targ
 
 
 INSERT INTO tb_movie_genre (movie_id, genre_id) VALUES (1, 1);
+INSERT INTO tb_movie_genre (movie_id, genre_id) VALUES (1, 3);
 INSERT INTO tb_movie_genre (movie_id, genre_id) VALUES (2, 2);
 INSERT INTO tb_movie_genre (movie_id, genre_id) VALUES (3, 2);
 INSERT INTO tb_movie_genre (movie_id, genre_id) VALUES (4, 2);
@@ -44,13 +45,13 @@ INSERT INTO tb_movie_genre (movie_id, genre_id) VALUES (9, 1);
 INSERT INTO tb_movie_genre (movie_id, genre_id) VALUES (10, 2);
 
 
-INSERT INTO tb_review (movie_id, user_id, text) VALUES (1, 1, 'Good movie');
-INSERT INTO tb_review (movie_id, user_id, text) VALUES (2, 2, 'bad scenario');
-INSERT INTO tb_review (movie_id, user_id, text) VALUES (3, 2, 'Good movie');
-INSERT INTO tb_review (movie_id, user_id, text) VALUES (4, 2, 'Good movie');
-INSERT INTO tb_review (movie_id, user_id, text) VALUES (5, 2, 'Good movie');
-INSERT INTO tb_review (movie_id, user_id, text) VALUES (6, 2, 'Good movie');
-INSERT INTO tb_review (movie_id, user_id, text) VALUES (7, 2, 'Good movie');
-INSERT INTO tb_review (movie_id, user_id, text) VALUES (8, 2, 'Good movie');
-INSERT INTO tb_review (movie_id, user_id, text) VALUES (9, 2, 'Good movie');
-INSERT INTO tb_review (movie_id, user_id, text) VALUES (10,2, 'Good movie');
+INSERT INTO tb_review (movie_id, user_id, text) VALUES (1, 1, 'Gostei muito do filme. Foi muito bom mesmo. Pena que durou pouco.');
+INSERT INTO tb_review (movie_id, user_id, text) VALUES (2, 2, 'Gostei muito do filme. Foi muito bom mesmo. Pena que durou pouco.');
+INSERT INTO tb_review (movie_id, user_id, text) VALUES (3, 2, 'Gostei muito do filme. Foi muito bom mesmo. Pena que durou pouco.');
+INSERT INTO tb_review (movie_id, user_id, text) VALUES (4, 2, 'Gostei muito do filme. Foi muito bom mesmo. Pena que durou pouco.');
+INSERT INTO tb_review (movie_id, user_id, text) VALUES (5, 2, 'Gostei muito do filme. Foi muito bom mesmo. Pena que durou pouco.');
+INSERT INTO tb_review (movie_id, user_id, text) VALUES (6, 2, 'Gostei muito do filme. Foi muito bom mesmo. Pena que durou pouco.');
+INSERT INTO tb_review (movie_id, user_id, text) VALUES (7, 2, 'Gostei muito do filme. Foi muito bom mesmo. Pena que durou pouco.');
+INSERT INTO tb_review (movie_id, user_id, text) VALUES (8, 2, 'Gostei muito do filme. Foi muito bom mesmo. Pena que durou pouco.');
+INSERT INTO tb_review (movie_id, user_id, text) VALUES (9, 2, 'Gostei muito do filme. Foi muito bom mesmo. Pena que durou pouco.');
+INSERT INTO tb_review (movie_id, user_id, text) VALUES (10,2, 'Gostei muito do filme. Foi muito bom mesmo. Pena que durou pouco.');

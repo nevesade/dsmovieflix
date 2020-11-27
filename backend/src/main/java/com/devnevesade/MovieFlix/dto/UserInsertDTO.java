@@ -1,6 +1,6 @@
 package com.devnevesade.MovieFlix.dto;
 
-import com.devade.dscatalog.services.validation.UserInsertValid;
+import com.devnevesade.MovieFlix.services.validation.UserInsertValid;
 
 @UserInsertValid
 public class UserInsertDTO  extends UserDTO{

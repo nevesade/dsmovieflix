@@ -1,6 +1,7 @@
 package com.devnevesade.MovieFlix.services;
 
 
+
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,8 +11,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.devnevesade.MovieFlix.dto.MovieDTO;
+import com.devnevesade.MovieFlix.entities.Genre;
 import com.devnevesade.MovieFlix.entities.Movie;
-
+import com.devnevesade.MovieFlix.repositories.GenreRepository;
 import com.devnevesade.MovieFlix.repositories.MovieRepository;
 import com.devnevesade.MovieFlix.services.exceptions.ResourceNotFoundException;
 
@@ -24,11 +26,14 @@ public class MovieService {
 	@Autowired
 	private MovieRepository repository;
 
+	@Autowired
+	private GenreRepository genreRepository;
+	
 
 	@Transactional(readOnly = true)
-	public Page<MovieDTO> findAllPaged(PageRequest pageRequest){
-				
-		Page<Movie> list = repository.findAll(pageRequest);
+	public Page<MovieDTO> findAllPaged(Long genreId, PageRequest pageRequest){
+		  Genre genre = (genreId == 0 ) ? null : genreRepository.getOne(genreId);
+		Page<Movie> list = repository.find(genre, pageRequest);
 	
 		return list.map(x -> new MovieDTO(x));
 		
