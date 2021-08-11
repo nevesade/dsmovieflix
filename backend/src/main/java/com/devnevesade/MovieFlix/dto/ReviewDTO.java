@@ -14,6 +14,8 @@ public class ReviewDTO {
 	@NotBlank(message = "Texto da avaliação não pode ser vazio")
 	private String text;
 	
+	
+	
 	public ReviewDTO() {
 		
 	}
